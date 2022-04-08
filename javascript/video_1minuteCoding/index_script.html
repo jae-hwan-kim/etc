@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 생성자</title>
+    <style>
+        body{ font-size: 3rem; }
+        h1 {
+            background-color: #fff000;
+        }
+    </style>
+    <script>
+        // window.onload = function () {
+        //     var title = document.getElementById('main-title');
+        //     console.log(title);
+        // };
+
+        // window.addEventListener('load', function () {
+        //     var title = document.getElementById('main-title');
+        //     console.log(title);
+        // });
+
+        // window.addEventListener('DOMContentLoaded', function () {
+        //     var title = document.getElementById('main-title');
+        //     console.log(title);
+        // });
+    </script>
+</head>
+<body>
+    <h1 id = "main-title">
+        <span>Hello1</span>
+        <span>Hello2</span>
+        <span>Hello3</span>
+        JavaScript DOM(Document Object Model) script
+    </h1>
+    <article>
+        <header>header</header>
+        <section>
+            <header class = "main-header">s header</header>
+            section1
+        </section>
+        <section>
+            <header>s header</header>
+            section2
+        </section>
+    </article>
+    <script>
+         var title = document.getElementById('main-title');
+         console.log(title);
+        // // 메서드 이름이 getElementById 는 단수이고, getElementsByTagName 은 복수이다.
+        // // Id 는 파일에서 하나만 선언할 수 있기 때문이다.
+        // var title = document.getElementById('main-title');
+        // var titleSpan = title.getElementsByTagName('span');
+        // console.log(titleSpan[1]);
+        // console.log(typeof titleSpan);
+    </script>
+</body>
+</html>

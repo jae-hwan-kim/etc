@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 객체</title>
+    <style>
+        body{ font-size: 3rem; }
+        h1 {
+            background-color: #fff000;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 객체</h1>
+
+    <script>
+        console.log(name); 
+        // window.namem -> window 라는 전역객체가 생략된 것이다.
+        // 그래서 person.introduce 를 할 때, name에서 오류가 안생긴다.
+
+        var person = {};
+        person.name = "동네79"; // 속성(프로퍼티)
+        person.age = 12; // 속성(프로퍼티)
+        person.introduce = function () {
+           console.log("안녕? 나는 " + this.name + "야. 나이는 " + this.age + "살이야.")
+        }; // 메서드(메서드)
+
+       var person2 = {
+           username: "jaekim",
+           age: 29,
+           introduce: function () {
+               console.log("안녕? 나는 " + this.username + "야. 나이는 " + this.age + "살이야.");
+           }
+       };
+
+       person.introduce();
+       person2.introduce();
+    </script>
+</body>
+</html>

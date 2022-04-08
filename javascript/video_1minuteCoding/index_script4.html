@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 생성자</title>
+    <style>
+        body{ font-size: 3rem; }
+        h1 {
+            background-color: #fff000;
+        }
+        .logo {
+            display:inline-block;
+            list-style: none;
+        }
+        .logo img {
+            width: 100px;
+        }
+        .link {
+            color: red;
+        }
+        .special {
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "main-title">
+        DOM (Document Object Model)
+        <small>small</small>
+    </h1>
+    <ul class = "logomom">
+        <li class="logo">
+            <img src = "images/icon1.png">
+            <a class = "link" href="https://google.com">google</a>
+        </li>
+        <li class="logo"><img src = "images/icon2.png"></li>
+        <li class="logo"><img src = "images/icon3.png"></li>
+    </ul>
+    <script>
+        var logo_link = document.querySelector('.logomom');
+        var listElem = document.createElement('li');
+        listElem.innerHTML = "<span>로고</span>";
+        logo_link.appendChild(listElem);
+        console.log(listElem);
+    </script>
+</body>
+</html>

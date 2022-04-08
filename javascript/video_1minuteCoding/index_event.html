@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트</title>
+    <style>
+        body{ font-size: 3rem; }
+        h1 {
+            background-color: #fff000;
+        }
+        .logo {
+            display:inline-block;
+            list-style: none;
+        }
+        .logo img {
+            width: 100px;
+        }
+        .link {
+            color: red;
+        }
+        .btn  {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "main-title">
+        EVENT
+        <small>small</small>
+    </h1>
+    <ul class = "logomom">
+        <li class="logo">
+            <img src = "images/icon1.png">
+            <a class = "link" href="https://google.com">google</a>
+        </li>
+        <li class="logo"><img src = "images/icon2.png"></li>
+        <li class="logo"><img src = "images/icon3.png"></li>
+    </ul>
+    <button class = "btn">클릭하세요!</button>
+    <script>
+        var btn = document.querySelector('.btn');
+        var mainTitle = document.querySelector('#main-title');
+
+        function btnClickHandler() {
+            mainTitle.style.background = 'dodgerblue';
+        }
+        //btn.onclick = btnClickHandler; onclick 은 속성이라 한가지기능만 있다.
+        //addEventListener 는 여러 함수를 넣을 수 있음
+        btn.addEventListener('click', btnClickHandler);
+        // btn.addEventListener('click', btnClickHandler2);
+        // btn.addEventListener('click', btnClickHandler3);
+    </script>
+</body>
+</html>

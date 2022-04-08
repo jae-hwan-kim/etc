@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수2</title>
+    <style>
+        body{ font-size: 3rem; }
+        h1 {
+            background-color: #fff000;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 함수2</h1>
+
+    <script>
+        // 변수의 유효 범위 (scope);
+        var a = 100; // 전역 변수
+
+        function sample1() {
+            var a = 300; // 지역 변수
+            var b = 200; // 지역 변수
+            var c = 999; // 지역 변수
+
+            console.log('sample1에서 a 출력' + a);
+            console.log('sample1에서 b 출력' + b);
+
+            function sample2() {
+                var d = 1; // 지역 변수
+                console.log("sample2에서 c 출력" + c);
+            }
+            sample2();
+            console.log("sample1에서 d 출력" + d);
+        }
+        sample1();
+        console.log('sample1 밖에서 a 출력' + a);
+        console.log('sample1 밖에서 b 출력' + b);
+    </script>
+</body>
+</html>

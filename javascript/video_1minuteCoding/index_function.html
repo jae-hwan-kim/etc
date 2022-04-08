@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수</title>
+    <style>
+        body{ font-size: 3rem; }
+        h1 {
+            background-color: #fff000;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 함수</h1>
+
+    <script>
+        // var a = 1;
+        // var b = 2;
+        // var name = "jaekim";
+        
+        // 매개변수가 없는 함수
+        // function sample() {
+        //     console.log("ㅋㅋㅋㅋ");
+        // }
+
+        // 매개변수가 있는 함수
+        // function 더하기(a, b) {
+        //     console.log(a + b);
+        // }
+
+        // 매개변수와 반환값이 있는 함수
+        // function 이름(name) {
+        //     console.log("안녕? 나는 " + name + "이야.");
+        // }
+
+        // 더하기(a, b);
+        // 이름(name);
+        
+        var h;
+        function 더하기(a, b) {
+            document.write(a + b);
+        }
+        function 더하기2(a, b) {
+            document.write(a + b);
+            return a + b;
+        }
+        h = 더하기(100, 200);
+        console.log(h);
+
+        document.querySelector('h1').style.height = h + 'px';
+    </script>
+</body>
+</html>

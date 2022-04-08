@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트</title>
+    <style>
+        body{ font-size: 3rem; }
+        h1 {
+            background-color: #fff000;
+        }
+        .menu {
+            display: flex;
+            background: yellow;
+        }
+        .menu-link {
+            margin: 0.5em;
+            padding: 0.5em;
+            color: #fff;
+            text-decoration: none;
+            background: dodgerblue;
+            list-style: none;
+        }
+        .menu-active {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "main-title">
+        EVENT
+    </h1>
+    
+    <nav class="menu">
+        <a href="#" class="menu-link" data-menu="1">menu1</a>
+        <a href="#" class="menu-link" data-menu="2">menu2</a>
+        <a href="#" class="menu-link" data-menu="3">menu3</a>
+    </nav>
+
+    <script>
+        var currentMenu;
+        var menu = document.querySelector('.menu');
+        
+        function clickHandler(e) {
+            if (currentMenu) {
+                currentMenu.classList.remove('menu-active');
+            }
+            e.target.classList.add('menu-active');
+            currentMenu = e.target;
+        }
+        menu.addEventListener('click', clickHandler);
+    </script>
+</body>
+</html>
