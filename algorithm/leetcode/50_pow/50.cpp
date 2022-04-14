@@ -19,7 +19,7 @@ public:
         
         if (n < 0) {
             if (n == INT_MIN) {
-                x = 1 / x;
+                x = (1 / x) * (1 / x);
                 n = -(n / 2);
             } else {
                 x = 1 / x;
@@ -38,7 +38,7 @@ public:
 int main (void) {
     double ret = 0;
     Solution pow = Solution();
-    ret = pow.myPow(2, -2);
+    ret = pow.myPow(2, 2);
     //ret = pow(-1, 1);
     std::cout<<"결과";
     std::cout<<ret;
