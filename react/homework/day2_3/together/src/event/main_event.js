@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Header from "./header";
+import Nav from "./nav";
 import Intro from "./intro";
 import List from "./list";
 import Create from "./create";
@@ -10,8 +12,14 @@ export default function Login() {
   
   return (
     <>
-      <div className="box">
-        <div className="box_position">
+      <div className="header">
+        <Header />
+      </div>
+      <div className="nav">
+        <Nav />
+      </div>
+      <div className="body">
+        <div className="body_position">
           <div className="event">
             <div onClick={() =>setPage(page ? false : true)}>
               <Intro />
