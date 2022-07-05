@@ -23,4 +23,4 @@ print(list)
 #             list[j + 1] = list[j]
 #             j -= 1
 #         list[j + 1] = key
-#     return (list)
+#     return (list)ls
