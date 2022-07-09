@@ -6,11 +6,11 @@ function Create() {
   return (
     <>
         <div className="create">
-          <div className="event_title">
+          <div className="create_title">
             <div>친바 제목</div>
             <textarea placeholder="친바 제목 입력" className="text"></textarea>
           </div>
-          <div className="event_intro">
+          <div className="create_intro">
             <div>친바 설명</div>
             <textarea placeholder="친바 설명 입력"></textarea>
           </div>
