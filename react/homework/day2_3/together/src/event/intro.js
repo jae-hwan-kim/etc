@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import "./apply.js";
 import "./style.css";
 
-function Intro() {
-  const [page, setPage] = useState(true);
+function Intro(props) {
 
   return (
     <>
@@ -12,7 +10,7 @@ function Intro() {
           <h1>친바 신청하기</h1>
         </div>
         <div className="title_2">
-          <button className="create_button" onClick={() =>setPage(page ? false : true)}>
+          <button className="create_button" onClick={() =>props.setPage(props.page ? false : true)}>
             소모임 생성
           </button>
         </div>
