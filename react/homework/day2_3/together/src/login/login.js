@@ -1,7 +1,7 @@
 import React from "react";
 import Intro from "./intro";
 import Inform from "./inform";
-import "./style.css";
+import "./login_style.css";
 
 export default function Login() {
   return (

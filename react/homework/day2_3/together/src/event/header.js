@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../logo.png';
-import "./style.css";
+import "./event_style.css";
 
 function Header() {
   return (

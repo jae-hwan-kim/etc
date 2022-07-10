@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./button";
-import "./style.css";
+import "./event_style.css";
 
 function Create() {
   return (

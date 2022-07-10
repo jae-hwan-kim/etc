@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./style.css";
+import "./event_style.css";
 
 const Nav = () => {
   const navigate = useNavigate();

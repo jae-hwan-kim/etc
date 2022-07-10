@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./event_style.css";
 
 function Intro(props) {
 

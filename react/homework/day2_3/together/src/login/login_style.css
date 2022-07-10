@@ -18,6 +18,12 @@ background-color */
   /* background-color: blanchedalmond; */
 }
 
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .input_box {
   width: 30%;
   /* background-color: blueviolet; */

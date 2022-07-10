@@ -1,21 +1,34 @@
 import React from "react";
-import "./style.css";
+// import profile1 from "../profile 1.png";
+// import profile2 from "../profile 2.png";
+// import profile3 from "../profile 3.png";
+// import profile4 from "../profile 4.png";
+// import profile5 from "../profile 5.png";
+// import profile6 from "../profile 6.png";
+import "./event_style.css";
 
 function Footer() {
+  const picture = [1, 2, 3, 4, 5, 6];
+  
 
+  const images = picture.map(image => {
+      return <img key={image} src={require(`../profile ${image}.png`)} className="profile" alt=""/>
+  });
   return (
     <>
-        <div className="list">
-          <div className="list_title">
+        <div className="list_box">
+          <div className="list">
+            <div className="list_title">
+              <h1>친바 신청 목록</h1>
+            </div>
+            <div className="attendees_info">
+              <div className="attendees">
+                <div className="attendee_picture">
+                  {images}
+                </div>
+                <div className="attendee_name">
 
-          </div>
-          <div className="attendees_info">
-            <div className="attendees">
-              <div className="attendee_picture">
-
-              </div>
-              <div className="attendee_name">
-
+                </div>
               </div>
             </div>
           </div>

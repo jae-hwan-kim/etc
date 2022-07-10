@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import "./event_style.css";
 
 function Event() {
   const [jip, setJip] = useState(0);

@@ -3,7 +3,7 @@ import Intro from "./intro";
 import Event from "./event";
 import Create from "./create";
 import Createinfo from "./create_info";
-import "./style.css";
+import "./event_style.css";
 
 function Apply() {
   const [page, setPage] = useState(true);
