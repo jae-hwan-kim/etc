@@ -5,7 +5,7 @@ import Create from "./create";
 import Createinfo from "./create_info";
 import "./event_style.css";
 
-function Apply() {
+function Apply({footer, setFooter}) {
   const [page, setPage] = useState(true);
 
   return (
@@ -15,7 +15,7 @@ function Apply() {
           <div className="event">
             <Intro page={page} setPage={setPage}/>
             <div className="event_detail">
-              <Event />
+              <Event footer={footer} setFooter={setFooter}/>
               {page ? <Create /> : <Createinfo />}
             </div>
           </div>

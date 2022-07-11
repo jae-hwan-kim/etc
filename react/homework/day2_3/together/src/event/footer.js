@@ -9,11 +9,15 @@ import "./event_style.css";
 
 function Footer() {
   const picture = [1, 2, 3, 4, 5, 6];
+  const names = ["tkim", "kyungsle", "jimin", "seunam", "jaekim", "seongyle"];
   
 
   const images = picture.map(image => {
       return <img key={image} src={require(`../profile ${image}.png`)} className="profile" alt=""/>
   });
+  // const names = picture.map(name => {
+  //   return <img key={name} src={require(`../profile ${name}.png`)} className="profile" alt=""/>
+  // });
   return (
     <>
         <div className="list_box">
@@ -23,11 +27,12 @@ function Footer() {
             </div>
             <div className="attendees_info">
               <div className="attendees">
+                {/* 이미지, 이름을 하나의 블록에 넣기 */}
                 <div className="attendee_picture">
                   {images}
                 </div>
                 <div className="attendee_name">
-
+                  {names.map(name => <p>{name}</p>)}
                 </div>
               </div>
             </div>

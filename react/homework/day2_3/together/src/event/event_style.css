@@ -191,6 +191,8 @@ textarea.text {
 
 .attendee_name {
   background-color: #888;
+  display: flex;
+  flex-direction: row;
   height: 50px;
   width: 10%;
 }
